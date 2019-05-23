@@ -43,9 +43,22 @@ export default class States extends Component{
     
                         <h1 class='count'>{Data[this.state.count].id}/25</h1>        
                         <h1 class='name'>{Data[this.state.count].name.first} {Data[this.state.count].name.last}</h1>
-                        <h4>{Data[this.state.count].employer}</h4>  
-                        <h2>{Data[this.state.count].city}, {Data[this.state.count].country}</h2>
-                        <h3>{Data[this.state.count].favoriteMovies}</h3>
+                       
+                        <div class='title'>
+                        <h2>From:</h2> <p>{Data[this.state.count].city}, {Data[this.state.count].country}</p>
+                        </div>
+                        <div class='title'>                       
+                        <h2>Job Title:</h2> <p>{Data[this.state.count].title}</p>
+                        </div> 
+                        <div class='title'>                       
+                        <h2>Employer:</h2> <p>{Data[this.state.count].employer}</p>                         
+                        </div> 
+                        
+                        <h2 class='movies'>Favorite Movies:</h2>
+
+                        <p class='words'>1. {Data[this.state.count].favoriteMovies[0]}</p>
+                        <p class='words'>2. {Data[this.state.count].favoriteMovies[1]}</p>
+                        <p class='words'>3. {Data[this.state.count].favoriteMovies[2]}</p>
 
                     </div>
            
